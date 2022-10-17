@@ -38,23 +38,23 @@ export const Card = ({ disabled, gameId, homeTeam, awayTeam, homeTeamScore, away
 
             <form className="flex space-x-4 justify-center items-center">
 
-                <span className="uppercase font-bold text-red-700">{homeTeam}</span>
-                <img src={`/img/flags/${homeTeam}.png`} width="56px"/>
+                <span className="uppercase font-bold text-red-700 md:text-lg">{homeTeam}</span>
+                <img src={`/img/flags/${homeTeam}.png`} className="w-[40px] md:w-[56px]"/>
 
-                <input type="number" min="0" max="20" className="bg-red-300/[0.2] w-[55px] h-[55px] text-red-700 text-xl text-center rounded-xl border border-red-500" 
+                <input type="number" min="0" max="20" className="bg-red-300/[0.2] w-[40px] h-[40px] text-lg md:w-[55px] md:h-[55px] md:text-xl text-red-700 text-center rounded-xl border border-red-500" 
                 name="homeTeamScore" value={formik.values.homeTeamScore}
                 onChange={formik.handleChange} onBlur={formik.handleSubmit}
                 disabled={disabled}/>
 
                 <span className="text-red-500 font-bold">X</span>
 
-                <input type="number" min="0" max="20" className="bg-red-300/[0.2] w-[55px] h-[55px] text-red-700 text-xl text-center rounded-xl border border-red-500" 
+                <input type="number" min="0" max="20" className="bg-red-300/[0.2] w-[40px] h-[40px] text-lg md:w-[55px] md:h-[55px] md:text-xl text-red-700 text-center rounded-xl border border-red-500" 
                 name="awayTeamScore" value={formik.values.awayTeamScore}
                 onChange={formik.handleChange} onBlur={formik.handleSubmit}
                 disabled={disabled}/>
 
-                <img src={`/img/flags/${awayTeam}.png`} width="56px"/>
-                <span className="uppercase font-bold text-red-700">{awayTeam}</span>
+                <img src={`/img/flags/${awayTeam}.png`} className="w-[40px] md:w-[56px]"/>
+                <span className="uppercase font-bold text-red-700 md:text-lg">{awayTeam}</span>
 
             </form>
 
