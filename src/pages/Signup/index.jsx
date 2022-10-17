@@ -82,7 +82,7 @@ export const Signup = () => {
                         type="text"
                         name="username"
                         label="Seu nome de usuário"
-                        placeholder="Digite um nome de usário"
+                        placeholder="Digite um nome de usuário"
                         error={formik.touched.username && formik.errors.username}
                         value={formik.values.username}
                         onChange={formik.handleChange}
